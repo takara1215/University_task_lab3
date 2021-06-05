@@ -9,37 +9,58 @@ public class test01 {
 
     @Test
     public void ChechWorkingCorrect() throws Exception {
-        SortColor sut = new SortColor();
+        //Arrange
         int[] expected = {0,0,1,1,2,2};
         int[] nums=  {2,0,2,1,1,0};
-        int[] actual =  sut.sortColors(nums);
+        SortColor sut = new SortColor();
+
+        //Act
+        int[] actual = sut.sortColors(nums);
+
+        //Assert
         assertThat(actual,is(expected));
     }
 
     @Test
     public void CheckWorkingCorrectWith0() throws Exception{
-        SortColor sut = new SortColor();
+
+        //Arrange
         int[] expected = {0};
         int[] nums=  {0};
+        SortColor sut = new SortColor();
+
+        //Act(&Assert)
         int[] actual =  sut.sortColors(nums);
+
+        //Assert
         assertThat(actual,is(expected));
     }
 
     @Test
     public void CheckWorkingCorrectWith1() throws Exception{
+        //Arrange
         SortColor sut = new SortColor();
         int[] expected = {1};
         int[] nums=  {1};
-        int[] actual =  sut.sortColors(nums);
+
+        //Act(&Assert)
+        int[]actual sut.sortColors(nums);
+
+        //Assert
         assertThat(actual,is(expected));
     }
 
     @Test
     public void CheckWorkingCorrectWith2() throws Exception{
+        //Arrange
         SortColor sut = new SortColor();
         int[] expected = {2};
         int[] nums=  {2};
+
+        //Act(&Assert)
         int[] actual =  sut.sortColors(nums);
+
+        //Assert
         assertThat(actual,is(expected));
     }
 
